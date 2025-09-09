@@ -94,3 +94,26 @@ h1 {
 .start-btn:active {
     transform: translateY(0);
 }
+
+.restart-btn {
+    background: #2F195F;
+    background: linear-gradient(145deg, rgba(47, 25, 95, 1) 0%, rgba(115, 83, 186, 1) 50%);
+    color: #FAA6FF;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+}
+
+.restart-btn:hover {
+    background: #2F195F;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
