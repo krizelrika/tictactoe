@@ -72,3 +72,25 @@ h1 {
     outline: none;
     border-color: #7353BA;
 }
+
+.start-btn {
+    background: #2F195F;
+    background: linear-gradient(145deg, rgba(47, 25, 95, 1) 0%, rgba(115, 83, 186, 1) 50%);
+    color: #FAA6FF;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.start-btn:active {
+    transform: translateY(0);
+}
