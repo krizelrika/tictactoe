@@ -117,3 +117,80 @@ h1 {
 .hidden {
     display: none;
 }
+
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0F1020;
+    min-height: 30px;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin: 0 auto 30px;
+    max-width: 300px;
+    aspect-ratio: 1;
+}
+
+.cell {
+    background: #F7FAFC;
+    border: 3px solid #E2E8E0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.cell:hover {
+    background: #FAA6FF;
+    border-color: #7353BA;
+    transform: scale(1.05);
+}
+
+.cell.x {
+    color: #E53E3E;
+}
+
+.cell.o {
+    color: #3182CE;
+}
+
+.cell.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.cell.disabled:hover {
+    transform: none;
+    background: #FAA6FF;
+    border-color: #7353BA;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message.win {
+    color: #EFC3F5;
+}
+
+.message.tie {
+    color: #0F1020;
+}
+
