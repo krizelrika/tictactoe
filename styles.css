@@ -107,6 +107,8 @@ h1 {
     cursor: pointer;
     margin-top: 20px;
     transition: all 0.2s ease;
+    align-content: center;
+
 }
 
 .restart-btn:hover {
